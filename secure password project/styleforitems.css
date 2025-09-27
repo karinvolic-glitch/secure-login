@@ -1,0 +1,25 @@
+body {
+    background: white;
+    background-image: url(./backgrounds/logo.png);
+    background-repeat: no-repeat;
+    background-position: left 40% d;
+    background-size: 180px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+.title{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+    color: black;
+}
+.form-container{
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
