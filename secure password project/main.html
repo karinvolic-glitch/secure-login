@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure-Password-Test</title>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <div>
+            <h1><span id="span1">welcome to</span> <span>Xyber-check</span></h1>
+        </div>
+    </header>
+    
+</head>
+<body>
+<div class="evrything">   
+    <h2>Verify</h2>
+    <div class="all-buttons">
+        <button id="btn1">social media password</button>
+        <button id="btn2">wifi password</button>
+        <button id="btn3">Messaging and Emails</button>
+        <button id="btn4">bank et payment</button>
+        <button id="btn5">games/apps</button>
+        <button id="btn6">Enterprise Platform</button>
+    </div>
+    <!--script pour que les boutons reste des urls-->
+      <script>
+        const buttonLinks = {
+          btn1: 'social.html',
+          btn2: 'wifi.html',
+          btn3: 'messaging.html',
+          btn4: 'bank.html',
+          btn5: 'games.html',
+          btn6: 'enterprise.html'
+        };
+      
+        Object.keys(buttonLinks).forEach(btnId => {
+          const btn = document.getElementById(btnId);
+          if (btn) {
+            btn.addEventListener('click', () => {
+              window.location.href = buttonLinks[btnId];
+            });
+          }
+        });
+      </script>
+      
+</div>   
+</body>
+</html>
